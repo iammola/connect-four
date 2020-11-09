@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="./Styles/CSS/Home.css">
+    <link rel="stylesheet" href="./Styles/CSS/Fonts.css">
+</head>
+<body>
+    <main class="game">
+        <section class="preview">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </section>
+        <section class="case">
+            <div class="columns">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="columns">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="columns">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="columns">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="columns">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="columns">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="columns">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </section>
+        <section class="player player_1">
+            <div class="name"></div>
+            <div class="color"></div>
+            <div class="score"></div>
+            <div class="code_display">
+                <span class="title">
+                    Game Code
+                </span>
+                <span class="value select"></span>
+            </div>
+        </section>
+        <section class="player player_2">
+            <div class="name"></div>
+            <div class="color"></div>
+            <div class="score"></div>
+        </section>
+        <div class="preview_puck"></div>
+    </main>
+    <main class="modal">
+        <section class="player_modal">
+            <div class="choose_color"></div>
+            <div class="name">
+                <input type="text" id="name" placeholder=" " autocomplete="off" minlength="3" required>
+                <label for="name">
+                    <span class="content-name">
+                        Name
+                    </span>
+                </label>
+            </div>
+            <button class="start_game">
+                <span class="content-name">
+                    Start
+                </span>
+            </button>
+        </section>
+        <section class="user_wait">
+            <span class="room_id">
+                <div class="code_title"></div>
+                <div class="code select"></div>
+            </span>
+            <span class="title"></span>
+            <span class="sub_title"></span>
+        </section>
+        <section class="player_disconnect_modal">
+            <div class="player_disconnect">
+                <div class="message">
+                    <span class="user"></span>
+                    <span class="text"> has left the game</span>
+                </div>
+                <div class="sub_message">
+                    <span class="title">
+                        Game Code
+                    </span>
+                    <span class="value select"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./JS/Constants.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./JS/Player.min.js"></script>
+    <script src="./JS/Home.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="./Styles/CSS/Index.css">
+    <link rel="stylesheet" href="./Styles/CSS/Fonts.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="title">
+                Connect 4
+            </div>
+            <div class="author">
+                Mola
+            </div>
+        </header>
+        <section class="choose_type">
+            <div class="host game_type">
+                <div class="title">
+                    Host Game
+                </div>
+                <button class="host_game">
+                    <span class="content-name">
+                        Host Game
+                    </span>
+                </button>
+            </div>
+            <div class="join game_type">
+                <div class="title">
+                    Join Game
+                </div>
+                <div class="code-input">
+                    <input type="text" id="joinGameCode" placeholder=" " minlength="7" maxlength="7" required>
+                    <label for="joinGameCode">
+                        <span class="content-name">
+                            Enter Code
+                        </span>
+                    </label>
+                </div>
+                <button class="join_game">
+                    <span class="content-name">
+                        Join Game
+                    </span>
+                </button>
+            </div>
+        </section>
+        <footer>
+            <div class="copyright">
+                <a href="tel:+2348127856869" target="_blank">
+                    &copy; <span class="author">MOLA</span>
+                </a>
+            </div>
+            <div class="social"></div>
+        </footer>
+    </main>
+    
+    <script src="./JS/Constants.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./JS/Index.min.js"></script>
+</body>
+</html>
