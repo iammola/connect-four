@@ -12,7 +12,6 @@ The first player can always win by playing the right moves.
 
 # source: https://en.wikipedia.org/wiki/Connect_Four
 
-# Server
+Server
 # The application requires a node.js server and works with socket.io for the web sockets... 
-# Contact me on adedejiademola100@gmail.com
-#
+# Contact me on adedejiademola100@gmail.com to get it
